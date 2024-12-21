@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+   justify-content: space-between;
+   height: 50px;
+   background-color: greenyellow;
+   
+}
+.logonew{
+    margin-top: 15px;
+}
+i{
+    margin-top: 15px;
+}
+li:hover{
+    text-decoration: 2px green underline;
+}
