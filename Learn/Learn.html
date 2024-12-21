@@ -53,5 +53,201 @@
             <li>Banana</li>
             <li>Guava</li>
         </ol>
+        <!-- create list with other type attributes -->
+         <ol type="A">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Guava</li>
+         </ol>
+
+        <!-- attributes used to add more information to the tag 
+        ex : lang, href, rel 
+        -->
+        <!-- anchor tag is used to add links to the web page
+         we use href which is known as hypertext reference attribute -->
+         <a href="https://leetcode.com/u/tarafdarashutosh/">click for leetcode</a>
+
+         <!-- image tag is used to add image 
+          it is used with the src which is source attribute
+          and alt is alternate name for the img in case the image is not visible if it is deleted-->
+
+        <img src="card2img.jpeg" alt="this is normal image">
+
+        <!-- practice Question : crate unordered list of three fruits along with the links to show the image -->
+
+        <h1>List of fruits</h1>
+        <ul>
+            <li>Apple <a href="apple.jpg">click here for apple</a></li>
+        </ul>
+        <!-- br tag used to add line break(next line) -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium expedita aliquam mollitia reprehenderit <br> molestias exercitationem perferendis, aut deserunt, placeat numquam accusantium</p><br>
+         
+        <!-- more html tags  b, i, u to highlight text on webpage-->
+        <b>bold</b>
+        <u>underline</u>
+        <i>italic</i>
+
+        <!-- comments is the part of code that should not be parsed it is extra information  that should not be displayed-->
+        <!-- html is not a case sensitive language it means capital letter and small letters are same-->
+        
+        <!-- practice Question : build a portpolio -->
+        <h1>Ashutosh Tarafdar</h1>
+        <img src="/Images/image 2.jpg" alt="">
+        <ul>
+            <li>Education : B.sc Computer science</li>
+            <li>Skills : HTML, css, java, c</li>
+            <li>contact : 7385817558</li>
+        </ul> 
+
+        <!-- inline v/s block element 
+         inline : it takes full width available(whole block), starts from new line
+         block  : it takes only necessary width, dont start from new line
+         -->
+         
+         <!-- div is known as content division element is a container
+         used to hold other html elements or groups of element together it is block element -->
+
+         <!-- span is also generic element used to hold other html elements but it is inline -->
+
+         <!-- hr is the horizontal rule used to add a line to break between the page or content also used to divide sections-->
+          <hr>
+
+          <!-- sub ans sup is the subscript and superscript for the maths and formulas -->
+           <p>H<sub>2</sub>o</p>
+           <p>2<sup>2</sup>= 4</p>
+
+           <!-- Practice Question   -->
+
+           <h1>Pythagorus theorem says : a <sup> 2 </sup> + b <sup> 2</sup> = c<sup>2</sup></h1>
+           <h1>glucose formula says : c <sup>6 </sup>H <sup>12</sup> o <sup>6</sup></h1>
+
+           <!-- semantic markup is markup that relates with the meaning of content
+            it is layout structures, seo- friendly -->
+            <header>this is header
+                <nav>this is navigation bar</nav>
+            </header>
+            <main>this is main content</main>
+            <footer>this is footer</footer>
+            <article>this is article</article>
+            <section>related content</section>
+            <aside>related links
+
+            </aside>
+
+            <!-- html entities is a piece of text that begins with ampersend and ends with semicolon is used to display characters that are difficult to type with keyboard -->
+
+            <!-- table
+              -->
+            <table border="block">
+                <!-- captions defines the type of data present in the table -->
+                <caption>Fruits</caption>
+                <!-- table header -->
+                 <thead>
+                    <!-- table row -->
+                 <tr>
+                    <!-- table head -->
+                     <th>fruits</th>
+                     <th>price</th>
+                 </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <!-- table data -->
+                     <!-- colspan or rowspan determines how much area element is going to take over columns or rows -->
+                    <td colspan="2">Apple</td>
+                    <td>100</td>
+
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>100</td>
+                </tr>
+            </tfoot>
+            </table>
+            <!-- practice Question -->
+             <table border="block">
+                <caption>A test table with merged cells</caption>
+                <thead>
+                    <tr>
+                        <td rowspan="2"></td>
+                        <td colspan="2">Average</td>
+                        <td rowspan="2">Red Eyes</td>
+                    </tr>
+                    <tr><td>Height</td>
+                    <td>Weight</td>
+                    </tr>
+                    <tr>
+                        <td>Males</td>
+                        <td>1.9</td>
+                        <td>0.003</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>Females</td>
+                        <td>1.7</td>
+                        <td>0.002</td>
+                        <td>43%</td>
+                    </tr>
+                </thead>
+             </table>
+
+             <!-- forms are used to collect data from the user -->
+             <!-- action attribute defines action needs to perform when the form is submitted or where the data should send -->
+              <form action="#">
+                <!-- label is the attribute used to form connection between text and the input control -->
+                 <label for="username" >Username : </label>
+                 <input type="text" id="username" placeholder="enter  username">
+                Enter the password : <input type="password">
+                Enter the Number : <input type="number">
+                Enter the color : <input type="color">
+                Enter the time : <input type="time">
+
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
+                <button type="button">button</button>
+
+                <input type="submit">
+                <input type="button" value="click me">
+
+                
+                <!-- name form control submitted with the form as name-value pair -->
+                 <input type="text" placeholder="username" name="user">
+                 <input type="submit">
+
+                 <label for="age">Age : i am 18+</label>
+                 <input type="checkbox" name="age" id="age"checked >
+                <!-- name attribute must be same if we are grouped the data into same category -->
+                 <input type="radio" id="apple" name="fruit">
+                 <label for="apple">apple</label>
+                 <input type="radio" id="banana" name="fruit">
+                 <label for="banana">banana</label> 
+
+                 <div>
+                    choose your subject
+                    <input type="checkbox" name="subject" id="math" value="math" >
+                    <label for="math">math</label>
+                    <input type="checkbox" name="subject" id="science" value="science">
+                 </div>
+
+                 <div>
+                    choose your profession
+                    <select name="profession" id="profession">
+                        <option value="dev">developer</option>
+                        <option value="teach" selected>teacher</option>
+
+                    </select>
+
+                    <label for="volume">volume</label>
+                    <input type="range" min="10" max="100" name="volume" step="10" value="20">
+                    <label for="feedback">feedback</label>
+                    <textarea name="feedback" id="feedback" placeholder="feedback"></textarea>
+                 </div>
+                </form>
+                
+
 </body>
 </html>
